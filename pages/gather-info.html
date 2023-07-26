@@ -1,70 +1,549 @@
-<div class="other">
-    <div class="other__container">
-        <div class="other__text">
-            <h1 class="other__heading">جمع‌آوری اطلاعات</h1><br>
-            <ul class="other__list u-margin-top-medium">
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    اجرای کامل ممیزی جزیره کیش شامل تهیه سیستم ورود اطلاعات، برداشت میدانی اطلاعات املاک و مستحدثات
-                    و ورود اطلاعات به سیستم
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AminTech">
+    <meta name="theme-color" content="#0f6973">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="#">
+    <title>دهک - صفحه اصلی</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div>
+            <a href="../index.html">
+                <img src="img/logo.png" alt="logo" class="navigation__logo">
+            </a>
+        </div>
+        <div class="navigation__mobilenav">
+            <a href="#" id="mobilenav">
+                <span class="material-symbols-outlined navigation__mobilenav--icon">
+                    menu
+                </span>
+            </a>
+            <div class="navigation__mobilenav--menu-main">
+                <ul class="navigation__mobilenav--list">
+                    <li class="navigation__mobilenav--item">
+                        <a href="#" class="navigation__mobilenav--link" id="mobileProductsBtn">
+                            محصولات
+                            <span class="material-symbols-outlined navigation__mobilenav--item-icon">
+                                expand_more
+                            </span>
+                        </a>
+                        <div class="navigation__mobilenav--menu-sub" id="mobileProducts">
+                            <ul class="navigation__mobilenav--list">
+                                <li class="navigation__mobilenav--item">
+                                    <a href="webgis.html" class="navigation__mobilenav--link" id="web-gis">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        ساما‌نه توانمند (Web GIS)
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="geobi.html" class="navigation__mobilenav--link" id="geobi">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        سامانه داشبورد مکانی کیمیا (GEOBI)
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="fsm.html" class="navigation__mobilenav--link" id="fsm">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        سامانه FSM
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="senama.html" class="navigation__mobilenav--link" id="senama">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        سامانه سه‌نما
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="twin.html" class="navigation__mobilenav--link" id="twin">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        سامانه تویین
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__mobilenav--item">
+                        <a href="#" class="navigation__mobilenav--link" id="projectsBtn">
+                            پروژه ها
+                            <span class="material-symbols-outlined navigation__mobilenav--item-icon">
+                                expand_more
+                            </span>
+                        </a>
+                        <div class="navigation__mobilenav--menu-sub" id="projects">
+                            <ul class="navigation__mobilenav--list">
+                                <li class="navigation__mobilenav--item">
+                                    <a href="system-production.html" class="navigation__mobilenav--link"
+                                        id="system-prodiction">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        تولید و پشتیبانی سامانه‌ها
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="datascan.html" class="navigation__mobilenav--link" id="datascan">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        اسکن و ورود اطلاعات
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="gather-info.html" class="navigation__mobilenav--link" id="gather-info">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        جمع‌آوری اطلاعات
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="man.html" class="navigation__mobilenav--link" id="man">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        برون‌سپاری خدمات شهرداری تهران
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__mobilenav--item">
+                        <a href="#" class="navigation__mobilenav--link" id="skillsBtn">
+                            توانایی ها
+                            <span class="material-symbols-outlined navigation__mobilenav--item-icon">
+                                expand_more
+                            </span>
+                        </a>
+                        <div class="navigation__mobilenav--menu-sub" id="skills">
+                            <ul class="navigation__mobilenav--list">
+                                <li class="navigation__mobilenav--item">
+                                    <a href="counceling.html" class="navigation__mobilenav--link" id="counceling">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        مشاوره، طراحی و تحلیل سیستم ها
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="#" class="navigation__mobilenav--link">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        تولید و عملیاتی سازی نرم افزارهای سفارش مشتری
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="#" class="navigation__mobilenav--link">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        تهیه Mater Plan
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="geomarketing.html" class="navigation__mobilenav--link" id="geomarketing">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        داده کاوی و ژئو مارکتینگ
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="gis.html" class="navigation__mobilenav--link" id="gis">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        طراحی و پیاده سازی سیستم های اطلاعات مکانی (GIS)
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="map.html" class="navigation__mobilenav--link" id="map">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        نقشه برداری و جمع آوری اطلاعات
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="#" class="navigation__mobilenav--link">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        آرشیو الکترونیک اسناد
+                                    </a>
+                                </li>
+                                <li class="navigation__mobilenav--item">
+                                    <a href="#" class="navigation__mobilenav--link">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        برداشت تخصصی اطلاعات نوسازی و طراحی بانک اطلاعات (ممیزی املاک)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__mobilenav--item">
+                        <a href="#" class="navigation__mobilenav--link" id="utilitiesBtn">
+                            ابزار و سرگرمی
+                            <span class="material-symbols-outlined navigation__mobilenav--item-icon">
+                                expand_more
+                            </span>
+                        </a>
+                        <div class="navigation__mobilenav--menu-sub" id="utilitiesMenu">
+                            <ul class="navigation__mobilenav--list">
+                                <li class="navigation__mobilenav--item">
+                                    <a href="../weather.html" class="navigation__mobilenav--link" id="weather">
+                                        <span class="material-symbols-outlined">
+                                            arrow_left
+                                        </span>
+                                        آب و هوا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__mobilenav--item">
+                        <a href="#contactUs" class="navigation__mobilenav--link">
+                            تماس با ما
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigation__container">
+            <ul class="navigation__list">
+                <li class="navigation__list--item dropdown">
+                    <a href="#" onclick="return false;" class="navigation__list--link">
+                        <span class="material-symbols-outlined expand-icon">
+                            expand_more
+                        </span>
+                        محصولات
+                    </a>
+                    <div class="hover-menu">
+                        <ul class="hover-menu__list">
+                            <li class="hover-menu__item">
+                                <a href="webgis.html" class="hover-menu__link" id="web-gis">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        inventory_2
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        سامانه توانمند: Web GIS
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="geobi.html" class="hover-menu__link" id="geobi">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        inventory_2
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        سامانه داشبورد مکانی کیمیا: GEOBI
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="fsm.html" class="hover-menu__link" id="fsm">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        inventory_2
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        سامانه خدمات مدیریت میدانی: FSM
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="senama.html" class="hover-menu__link" id="senama">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        inventory_2
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        سامانه سه نما
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="twin.html" class="hover-menu__link" id="twin">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        inventory_2
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        سامانه تویین: Twin
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری و جمع‌آوری اطلاعات مربوط به فیبر نوری - شرکت کنترل ترافیک تهران شهرداری تهران
+                <li class="navigation__list--item dropdown">
+                    <a href="#" onclick="return false;" class="navigation__list--link">
+                        <span class="material-symbols-outlined expand-icon">
+                            expand_more
+                        </span>
+                        پروژه ها
+                    </a>
+                    <div class="hover-menu">
+                        <ul class="hover-menu__list">
+                            <li class="hover-menu__item">
+                                <a href="system-production.html" class="hover-menu__link" id="system-production">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        <span class="material-symbols-outlined">
+                                            engineering
+                                        </span>
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        تولید و پشتیبانی سامانه ها
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="datascan.html" class="hover-menu__link" id="datascan">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        document_scanner
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        اسکن و ورود اطلاعات
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="gather-info.html" class="hover-menu__link" id="gather-info">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        storage
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        جمع آوری اطلاعات
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="man.html" class="hover-menu__link" id="man">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        gavel
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        برون سپاری خدمات شهرداری تهران
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری توپوگرافی ۱:۲۰۰ از قطب صنعتی منطقه آزاد چابهار – سازمان منطقه آزاد چابهار
+                <li class="navigation__list--item dropdown">
+                    <a href="#" onclick="return false;" class="navigation__list--link">
+                        <span class="material-symbols-outlined expand-icon">
+                            expand_more
+                        </span>
+                        توانایی ها
+                    </a>
+                    <div class="hover-menu">
+                        <ul class="hover-menu__list">
+                            <li class="hover-menu__item">
+                                <a href="counceling.html" class="hover-menu__link" id="counceling">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        monitoring
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        مشاوره، طراحی و تحلیل سیستم ها
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="#" class="hover-menu__link">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        person
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        تولید و عملیاتی سازی نرم افزارهای سفارش مشتری
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="#" class="hover-menu__link">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        account_tree
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        تهیه Mater Plan
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="geomarketing.html" class="hover-menu__link" id="geomarketing">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        database
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        داده کاوی و ژئو مارکتینگ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="gis.html" class="hover-menu__link" id="gis">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        location_on
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        طراحی و پیاده سازی سیستم های اطلاعات مکانی (GIS)
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="map.html" class="hover-menu__link" id="map">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        map
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        نقشه برداری و جمع آوری اطلاعات
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="#" class="hover-menu__link">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        archive
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        آرشیو الکترونیک اسناد
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a href="#" class="hover-menu__link">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        apartment
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        برداشت تخصصی اطلاعات نوسازی و طراحی بانک اطلاعات (ممیزی املاک)
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    تهیه نقشه چون ساخت از شبكه فاضلاب شهر تهران به روش نقشه‌برداری مستقیم
+                <li class="navigation__list--item dropdown">
+                    <a href="#" onclick="return false;" class="navigation__list--link">
+                        <span class="material-symbols-outlined expand-icon">
+                            expand_more
+                        </span>
+                        ابزار و سرگرمی
+                    </a>
+                    <div class="hover-menu">
+                        <ul class="hover-menu__list">
+                            <li class="hover-menu__item">
+                                <a href="../weather.html" class="hover-menu__link" id="weather">
+                                    <span class="material-symbols-outlined hover-menu__link--icon">
+                                        partly_cloudy_day
+                                    </span>
+                                    <span class="hover-menu__link--title">
+                                        آب و هوا
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری ۱:۲۰۰ از تقاطع های شهری – شرکت کنترل ترافیک تهران
-                </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری ۱:۵۰۰ از مسیر فیبر نوری – شرکت کنترل ترافیک تهران
-                </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری و برداشت شیر خط‌های آب – آب و فاضلاب منطقه ۱ تهران
-                </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری و برداشت شیر خط‌های آب – آب و فاضلاب منطقه ۲ تهران
-                </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری و برداشت مشترکین – آب و فاضلاب منطقه ۱ تهران
-                </li>
-                <li class="other__items">
-                    <span class="material-symbols-outlined">
-                        priority
-                    </span>
-                    نقشه‌برداری ۱:۲۰۰ از پایانه‌های تاکسیرانی شهر تهران - شرکت کنترل ترافیک شهرداری تهران
+                <li class="navigation__list--item">
+                    <a href="#contactUs" class="navigation__list--link">تماس با ما</a>
                 </li>
             </ul>
         </div>
-    </div>
-</div>
+        <div class="navigation__dahak navigation__dahak--animate">
+            دهک
+        </div>
+    </nav>
+    <main class="other">
+        <div class="other__container">
+            <div class="other__text">
+                <h1 class="other__heading">جمع‌آوری اطلاعات</h1><br>
+                <ul class="other__list u-margin-top-medium">
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        اجرای کامل ممیزی جزیره کیش شامل تهیه سیستم ورود اطلاعات، برداشت میدانی اطلاعات املاک و مستحدثات
+                        و ورود اطلاعات به سیستم
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری و جمع‌آوری اطلاعات مربوط به فیبر نوری - شرکت کنترل ترافیک تهران شهرداری تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری توپوگرافی ۱:۲۰۰ از قطب صنعتی منطقه آزاد چابهار – سازمان منطقه آزاد چابهار
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        تهیه نقشه چون ساخت از شبكه فاضلاب شهر تهران به روش نقشه‌برداری مستقیم
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری ۱:۲۰۰ از تقاطع های شهری – شرکت کنترل ترافیک تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری ۱:۵۰۰ از مسیر فیبر نوری – شرکت کنترل ترافیک تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری و برداشت شیر خط‌های آب – آب و فاضلاب منطقه ۱ تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری و برداشت شیر خط‌های آب – آب و فاضلاب منطقه ۲ تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری و برداشت مشترکین – آب و فاضلاب منطقه ۱ تهران
+                    </li>
+                    <li class="other__items">
+                        <span class="material-symbols-outlined">
+                            priority
+                        </span>
+                        نقشه‌برداری ۱:۲۰۰ از پایانه‌های تاکسیرانی شهر تهران - شرکت کنترل ترافیک شهرداری تهران
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer include-html="../footer.html"></footer>
+    <script src="../common.js" type="text/javascript"></script>
+</body>
+
+</html>
