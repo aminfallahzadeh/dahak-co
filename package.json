@@ -1,0 +1,21 @@
+{
+  "name": "dahak-co",
+  "version": "1.0.0",
+  "description": "Dadeh Kavan Hooshmand Kimiya - IT Company",
+  "main": "index.js",
+  "scripts": {
+    "compile-w": "node-sass sass/main.scss css/style.css -w",
+    "compile": "node-sass sass/main.scss css/style.css",
+    "live": "live-server --browser='Google Chrome'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^2.2.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.63.4"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
