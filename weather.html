@@ -479,17 +479,19 @@
             <div class="other__container">
                 <div class="other__text">
                     <div class="other__weather">
-                        <img src="img/weather.png" alt="weather-app" class="other__weather--img">
+                        <img src="img/weather.png" alt="weather-app"
+                            class="other__weather--img other__weather--img-animate" id="img">
                         <h3 class="heading-tertiary"> آب و هوا</h3>
-                        <div class="other__weather--container u-margin-top-medium">
+                        <div class="other__weather--container u-margin-top-medium ">
                             <label for="input-city" class="other__weather--label">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined other__weather--serach-icn">
                                     location_on
                                 </span>
-                                نام شهر:
                             </label>
                             <input type="text" placeholder="نام شهر" class="other__weather--input" id="input-city">
-                            <a href="#" class="btn" id="search-btn">
+                        </div>
+                        <div class="other__weather--btn-container">
+                            <a href="#" class="btn u-margin-top-medium" id="search-btn">
                                 <i class="other__weather--search">
                                     <span class="material-symbols-outlined">
                                         search
