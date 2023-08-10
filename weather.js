@@ -20,10 +20,16 @@ function handleRepsponse() {
 
   const img = document.getElementById("img");
 
+  const responsContainer = document.querySelector(
+    ".other__weather--response-item"
+  );
+
   const city = document.getElementById("input-city").value;
   const resCity = document.querySelector(".res-city");
   const resTemp = document.querySelector(".res-temp");
   const resWeather = document.querySelector(".res-weather");
+  const resHumidity = document.querySelector(".res-humidity");
+  const resWindSpeed = document.querySelector(".res-windspeed");
 
   if (city === "") return;
 
@@ -35,13 +41,72 @@ function handleRepsponse() {
     })
     .then((data) => {
       console.log(data);
-      resCity.innerHTML = `${data.name}`;
-      resTemp.innerHTML = `${parseInt(data.main.temp)}<span>°C</span>`;
-      resWeather.innerHTML = `${data.weather[0].description}`;
+      resCity.innerHTML = `نام شهر : <span class="response">${data.name}</span>`;
+      resTemp.innerHTML = `دما : <span class="response">${parseInt(
+        data.main.temp
+      )} درجه سانتیگراد </span>`;
+      resWeather.innerHTML = `آب و هوا : <span class="response">${data.weather[0].description}</span>`;
+      resHumidity.innerHTML = `رطوبت : <span class="response">${data.main.humidity}</span>`;
+      resWindSpeed.innerHTML = `سرعت باد : <span class="response">${data.wind.speed}</span>`;
 
-      switch (data.weather[0].description) {
-        case "کمی ابری":
-          img.src = "img/cloud-light.png";
+      responsContainer.style.flex = "2 0 15%";
+
+      switch (data.weather[0].main) {
+        case "Clouds":
+          img.src = "img/clouds.png";
+          img.animate(
+            [
+              { opacity: 0, transform: "translateY(-8rem)" },
+              { opacity: 1, transform: "translateY(0)" },
+            ],
+            {
+              duration: 1000,
+              easing: "ease-in-out",
+            }
+          );
+          break;
+
+        case "Clear":
+          img.src = "img/clear.png";
+          img.animate(
+            [
+              { opacity: 0, transform: "translateY(-8rem)" },
+              { opacity: 1, transform: "translateY(0)" },
+            ],
+            {
+              duration: 1000,
+              easing: "ease-in-out",
+            }
+          );
+          break;
+        case "Rain":
+          img.src = "img/rain.png";
+          img.animate(
+            [
+              { opacity: 0, transform: "translateY(-8rem)" },
+              { opacity: 1, transform: "translateY(0)" },
+            ],
+            {
+              duration: 1000,
+              easing: "ease-in-out",
+            }
+          );
+          break;
+        case "Snow":
+          img.src = "img/snow.png";
+          img.animate(
+            [
+              { opacity: 0, transform: "translateY(-8rem)" },
+              { opacity: 1, transform: "translateY(0)" },
+            ],
+            {
+              duration: 1000,
+              easing: "ease-in-out",
+            }
+          );
+          break;
+        case "Haze":
+          img.src = "img/haze.png";
           img.animate(
             [
               { opacity: 0, transform: "translateY(-8rem)" },
