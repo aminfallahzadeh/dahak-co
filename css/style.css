@@ -1313,3 +1313,8 @@ body {
   font-size: 2rem !important;
   color: #20c571 !important;
   font-style: italic; }
+
+.error {
+  font-size: 2rem !important;
+  color: red !important;
+  font-style: italic; }
