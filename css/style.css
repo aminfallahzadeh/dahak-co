@@ -1265,8 +1265,7 @@ body {
     padding: 2rem;
     text-align: center; }
     .other__weather--img {
-      width: 30rem;
-      margin: 2rem; }
+      width: 20rem; }
       .other__weather--img-animate {
         animation: moveInUp 1s ease-in-out; }
     .other__weather--container {
@@ -1298,7 +1297,8 @@ body {
       justify-content: cneter;
       align-items: center; }
     .other__weather--btn-container {
-      text-align: center; }
+      text-align: center;
+      margin-right: 8rem; }
     .other__weather--response {
       display: grid;
       grid-template-columns: 3 1fr; }
