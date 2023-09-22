@@ -21,6 +21,6 @@ if (browserName !== "safari") {
   window.onload = function () {
     console.log("loaded");
     bgVid.innerHTML =
-      '<object type="text/html" data="video.html" class="bg-video__content"></object>';
+      '<video autoplay muted playsinline loop class="bg-video__content"> <source src="img/map1.webm" type="video/webm"><source src="img/map1.mp4" type="video/mp4">Your browser is not supported</video>';
   };
 }
