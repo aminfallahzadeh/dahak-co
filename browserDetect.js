@@ -19,7 +19,6 @@ if (browserName !== "safari") {
   const bgVid = document.querySelector(".bg-video");
 
   window.onload = function () {
-    console.log("loaded");
     bgVid.innerHTML =
       '<video autoplay muted playsinline loop class="bg-video__content"> <source src="img/map1.webm" type="video/webm"><source src="img/map1.mp4" type="video/mp4">Your browser is not supported</video>';
   };
