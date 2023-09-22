@@ -201,12 +201,9 @@ body {
 
 .btn-container {
   position: absolute;
-  left: 40%; }
-  @media (max-width: 56.25em) {
-    .btn-container {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%); } }
+  left: 50%;
+  top: 105%;
+  transform: translate(-50%, -50%); }
 
 .btn {
   text-decoration: none; }
@@ -229,25 +226,9 @@ body {
     border: none; }
     .btn:hover span {
       color: #33343c; }
-    @media (max-width: 56.25em) {
-      .btn:hover {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -0.2rem); } }
-    @media (max-width: 37.5em) {
-      .btn:hover {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -0.2rem); } }
   .btn:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0); }
-    @media (max-width: 56.25em) {
-      .btn:active {
-        transform: translate(-50%, 0); } }
-    @media (max-width: 37.5em) {
-      .btn:active {
-        transform: translate(-50%, 0); } }
 
 .slider-container {
   max-width: max-content;
