@@ -39,8 +39,10 @@ body {
   font-size: 6.5rem;
   text-align: center; }
   .heading-primary:hover {
-    transform: skewX(5deg) scale(1.05);
-    text-shadow: 0 2rem 3rem #000; }
+    transform: skewX(5deg) scale(1.05) translateZ(0);
+    -webkit-transform: skewX(5deg) scale(1.05) translateZ(0);
+    text-shadow: 0 0 24px #f5a08c, 0 0 4px #f5a08c, 1px 1px 2px #000;
+    -webkit-text-shadow: 0 0 24px #f5a08c, 0 0 4px #f5a08c, 1px 1px 2px #000; }
   @media (max-width: 75em) {
     .heading-primary {
       font-size: 5.5rem; } }
@@ -75,9 +77,11 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.8rem; } }
-  .heading-secondary:hover {
-    color: #f5a08c;
-    text-shadow: 0 2rem 3rem #000; }
+  .heading-secondary:hover:hover {
+    transform: scale(1.05) translateZ(0);
+    -webkit-transform: scale(1.05) translateZ(0);
+    text-shadow: 0 0 24px #f5a08c, 0 0 4px #f5a08c, 1px 1px 2px #000;
+    -webkit-text-shadow: 0 0 24px #f5a08c, 0 0 4px #f5a08c, 1px 1px 2px #000; }
 
 .heading-tertiary {
   font-size: 2.5rem;
@@ -205,8 +209,7 @@ body {
       transform: translate(-50%); } }
 
 .btn {
-  text-decoration: none;
-  border-radius: 0.2rem; }
+  text-decoration: none; }
   .btn:link, .btn:visited {
     font-size: 2rem;
     color: #f5a08c;
@@ -218,6 +221,7 @@ body {
       .btn:link, .btn:visited {
         font-size: 1.5rem; } }
   .btn:hover {
+    border-radius: 0.2rem;
     background-color: #f5a08c;
     color: #33343c;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -404,7 +408,7 @@ body {
       transition: all 0.25s; }
       .header__list--item:hover {
         transform: skewX(5deg) scale(105%);
-        text-shadow: 0 2rem 3rem #000; }
+        text-shadow: 0 7px 11px #000; }
       .header__list--item span {
         color: #f5a08c;
         font-size: 5rem;
@@ -829,7 +833,7 @@ body {
       color: #fff;
       font-size: 1.4rem;
       padding: 1.3rem;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.81);
       transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); }
       @media (max-width: 56.25em) {
         .section-products__card--overlay span {
